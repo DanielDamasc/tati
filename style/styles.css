@@ -1,0 +1,209 @@
+/* -------------------------------------------------- */
+/* COLORS */
+
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
+/* ---------------------  ALL  --------------------- */
+/* -------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2ece3;
+}
+
+section {
+    padding: 20px 8%;
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .2s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------------------------------- */
+/* --------------------  HEADER  -------------------- */
+/* -------------------------------------------------- */
+
+header {
+    background-color: #5d4524;
+    /* entender essa responsividade */
+    width: 100%;
+    padding: 20px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    /* sei la ??? */
+    width: 12rem;
+    height: 2.6rem;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #f2ece3;
+    font-weight: 520;
+    font-size: 20px;
+    padding-bottom: 0.5rem;
+}
+
+.nav-item.active a {
+    color: #ffcfd9;
+    border-bottom: 2px solid #ffcfd9;
+}
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffcfd9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.btn-default:hover {
+    background-color: #f2ece3;
+}
+
+#mobile-btn {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+/* entender como isso funciona */
+@media screen and (max-width: 1170px) {
+    #nav-list,
+    .btn-default {
+        display: none;
+    }
+
+    #mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.6rem;
+        color: #f2ece3;
+        cursor: pointer;
+    }
+
+    #mobile-menu.active,
+    #mobile-menu .btn-default {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 12px 0px;
+        gap: 12px;
+        list-style: none;
+    }
+}
+
+/* -------------------------------------------------- */
+/* ----------------  MAIN CONTENT  ----------------- */
+/* -------------------------------------------------- */
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    min-height: calc(100vh - 85.6px);
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 8%;
+}
+
+#cta .title {
+    font-size: 3rem;
+    color: #1d1d1d;
+}
+
+#cta .title span {
+    font-size: 3rem;
+    color: #5d4524;
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cta-buttons {
+    width: 60%;
+}
+
+#cta-buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 60%;
+}
+
+#banner img {
+    width: 750px;
+    height: 450px;
+}
