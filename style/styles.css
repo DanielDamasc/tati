@@ -1,6 +1,10 @@
 /* -------------------------------------------------- */
 /* COLORS */
-
+/* bg do body - #f2ece3 */
+/* preto para title - #1d1d1d */
+/* marrom - #5d4524 */
+/* rosa - #ffcfd9 */
+/* cinza para description - #434343 */
 /* -------------------------------------------------- */
 
 /* -------------------------------------------------- */
@@ -44,6 +48,16 @@ section {
 
 .social-media-buttons a:hover {
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #5d4524;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.section-subtitle {
+    font-size: 0.95rem;
 }
 
 /* -------------------------------------------------- */
@@ -98,7 +112,7 @@ header {
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color .2s ease;
@@ -119,7 +133,7 @@ header {
 /* entender como isso funciona */
 @media screen and (max-width: 1170px) {
     #nav-list,
-    .btn-default {
+    #btn-header {
         display: none;
     }
 
@@ -133,7 +147,7 @@ header {
     }
 
     #mobile-menu.active,
-    #mobile-menu .btn-default {
+    #mobile-menu.btn-default {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -156,7 +170,9 @@ header {
 #home {
     display: flex;
     justify-content: space-between;
-    min-height: calc(100vh - 85.6px);
+    margin-top: 20px;
+    /* min-height: calc(100vh - 85.6px); */
+    min-height: 60vh;
 }
 
 #cta {
@@ -199,11 +215,97 @@ header {
 #banner {
     display: flex;
     align-items: start;
-    justify-content: end;
-    width: 60%;
 }
 
 #banner img {
-    width: 750px;
-    height: 450px;
+    /* paia né */
+    width: 700px;
+    height: 420px;
 }
+
+/* media query para remover a imagem */
+@media screen and (max-width: 1300px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        align-items: center;
+    }
+
+    #home-buttons {
+        width: 80%;
+    }
+
+    #cta-buttons {
+        width: 40%;
+    }
+}
+
+/* -------------------------------------------------- */
+/* ----------------  PROCEDIMENTOS  ----------------- */
+/* -------------------------------------------------- */
+
+#section-procedimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#procedimentos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#procedimentos img {
+    max-width: 400px;
+}
+
+.procedimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    background-color: #ffcfd9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 0px 0px 42.5px;
+}
+
+.procedimento-description {
+    text-align: justify;
+    color: #434343;
+}
+
+/* responsividade */
