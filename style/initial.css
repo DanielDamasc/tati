@@ -1,0 +1,85 @@
+/* -------------------------------------------------- */
+/* ----------------  MAIN CONTENT  ----------------- */
+/* -------------------------------------------------- */
+
+#home {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    min-height: 60vh;
+}
+
+/* cta */
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+}
+
+#cta .title {
+    font-size: 3rem;
+    color: #1d1d1d;
+}
+
+#cta .title span {
+    font-size: 3rem;
+    color: #5d4524;
+}
+
+#cta .description {
+    font-size: 1.2rem;
+}
+
+#home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#cta-buttons {
+    width: 60%;
+}
+
+#cta-buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+/* img */
+#banner {
+    display: flex;
+    align-items: center;
+}
+
+#banner img {
+    width: 600px;
+    height: auto;
+}
+
+/* remove img for responsive */
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        align-items: center;
+    }
+
+    #home-buttons {
+        width: 80%;
+    }
+
+    #cta-buttons {
+        width: 40%;
+    }
+}

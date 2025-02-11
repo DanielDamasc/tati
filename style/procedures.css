@@ -1,0 +1,78 @@
+/* -------------------------------------------------- */
+/* ----------------  PROCEDIMENTOS  ----------------- */
+/* -------------------------------------------------- */
+
+#section-procedimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* ?? */
+    min-height: 95vh;
+}
+
+#procedimentos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#procedimentos img {
+    max-width: 400px;
+    height: auto;
+}
+
+.procedimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    background-color: #ffcfd9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 0px 0px 42.5px;
+}
+
+.procedimento-description {
+    text-align: justify;
+    color: #434343;
+}
+
+/* responsive, reducing card */
+@media screen and (max-width: 680px) {
+    .procedimento,
+    #procedimentos img {
+        max-width: 300px;
+    }
+
+    .procedimento {
+        padding: 15px;
+    }
+
+    #procedimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

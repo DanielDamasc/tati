@@ -1,0 +1,63 @@
+/* -------------------------------------------------- */
+/* COLORS */
+/* bg do body - #f2ece3 */
+/* preto para textos - #1d1d1d */
+/* marrom - #5d4524 */
+/* rosa - #ffcfd9 */
+/* cinza para textos - #434343 */
+/* -------------------------------------------------- */
+
+
+/* default cfg */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+/* bg color */
+body {
+    background-color: #f2ece3;
+}
+
+/* alignment */
+section {
+    padding: 20px 8%;
+}
+
+/* buttons */
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .2s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* titles */
+.section-title {
+    color: #5d4524;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.section-subtitle {
+    font-size: 0.95rem;
+}
